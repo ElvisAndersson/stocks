@@ -1,4 +1,4 @@
-export const stockData = [
+export const STOCK_DATA = [
   {name: 'Company 1', ticker: 'C1', sector: 'Technology', open: 150, close: 152, high: 155, low: 148, outstandingShares: 2000000},
   {name: 'Company 2', ticker: 'C2', sector: 'Healthcare', open: 120, close: 125, high: 130, low: 118, outstandingShares: 1500000},
   {name: 'Company 3', ticker: 'C3', sector: 'Finance', open: 50, close: 52, high: 55, low: 48, outstandingShares: 3000000},

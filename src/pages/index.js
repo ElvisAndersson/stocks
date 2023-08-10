@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Stock from '../components/Stock';
 import styles from '../styles/Home.module.css';
 import {Button} from 'antd';
+import {STOCK_DATA} from '@/constants';
 
 
 const calculateCurrentValue = (stock) => {
@@ -9,7 +10,7 @@ const calculateCurrentValue = (stock) => {
 };
 
 const HomePage = () => {
-  const [sortedStocks, setSortedStocks] = useState(stockData);
+  const [sortedStocks, setSortedStocks] = useState(STOCK_DATA);
   const [sortOrder, setSortOrder] = useState({property: 'open', order: 'asc'});
 
   const sortByProperty = (property) => {
@@ -45,7 +46,7 @@ const HomePage = () => {
 
   // Function to calculate the total outstanding shares
   const calculateTotalOutstandingShares = () => {
-    return stockData.reduce((totalShares, stock) => {
+    return STOCK_DATA.reduce((totalShares, stock) => {
       return totalShares + stock.outstandingShares;
     }, 0);
   };
@@ -63,7 +64,7 @@ const HomePage = () => {
 
   // Filter the stock data based on the technology filter
   const filteredStocks = showTechnologyOnly ?
-   stockData.filter((stock) => stock.sector === 'Technology') :
+  STOCK_DATA.filter((stock) => stock.sector === 'Technology') :
    sortedStocks;
 
   return (
