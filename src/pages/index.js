@@ -126,8 +126,8 @@ export default HomePage;
 
 // Cons
 // Nothing works when using filtered array
-// ESlint perhaps
-// No UI design, windows issues solved by not using windows
+// ESlint perhaps - fixed
+// No UI design, windows issues solved by not using windows - fixed
 
 // Upgrades
 // Rework list to cards/grid
