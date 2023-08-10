@@ -26,6 +26,7 @@
 }
 
 .description p {
+  font-family: 'Roboto', sans-serif;
   position: relative;
   margin: 0;
   padding: 1rem;
@@ -47,6 +48,7 @@
 }
 
 .card {
+  font-family: 'Roboto', sans-serif;
   padding: 1rem 1.2rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
@@ -206,6 +208,7 @@
     z-index: 1;
   }
 }
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {

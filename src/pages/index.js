@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Stock from '../components/Stock';
 import styles from '../styles/Home.module.css'
+import { Button } from 'antd';
 
 
 const stockData = [
@@ -94,15 +95,15 @@ const HomePage = () => {
       <h1 className={styles.pageTitle}>Stock Market Data</h1>
       <div className={styles.buttonContainer}>
         <div className={styles.sortButtonContainer}>
-          <button onClick={() => sortByProperty('open')}>Sort by Open Price</button>
-          <button onClick={() => sortByProperty('close')}>Sort by Close Price</button>
-          <button onClick={() => sortByProperty('high')}>Sort by High Price</button>
-          <button onClick={() => sortByProperty('low')}>Sort by Low Price</button>
-          <button onClick={sortByCurrentValue}>Sort by Current Value</button>
+          <Button onClick={() => sortByProperty('open')}>Sort by Open Price</Button>
+          <Button onClick={() => sortByProperty('close')}>Sort by Close Price</Button>
+          <Button onClick={() => sortByProperty('high')}>Sort by High Price</Button>
+          <Button onClick={() => sortByProperty('low')}>Sort by Low Price</Button>
+          <Button onClick={sortByCurrentValue}>Sort by Current Value</Button>
         </div>
-        <button onClick={toggleTechnologyFilter}>
+        <Button onClick={toggleTechnologyFilter}>
           {showTechnologyOnly ? 'Show All Sectors' : 'Show Technology Sector Only'}
-        </button>
+        </Button>
       </div>
       <p>Total Outstanding Shares: {totalOutstandingShares}</p>
       <ul className={styles.stockList}>
