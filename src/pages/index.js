@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Stock from '../components/Stock';
 import styles from '../styles/Home.module.css'
 
+
 const stockData = [
     {name: 'Company 1', ticker: 'C1', sector: 'Technology', open: 150, close: 152, high: 155, low: 148, outstandingShares: 2000000},
     {name: 'Company 2', ticker: 'C2', sector: 'Healthcare', open: 120, close: 125, high: 130, low: 118, outstandingShares: 1500000},
