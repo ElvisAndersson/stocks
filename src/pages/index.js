@@ -133,7 +133,7 @@ return (
       {showTechnologyOnly ? 'Show All Sectors' : 'Show Technology Sector Only'}
     </Button>
   </div>
-  <p>Total Outstanding Shares: {totalOutstandingShares}</p>
+  <p className={styles.Card}>Total Outstanding Shares: {totalOutstandingShares}</p>
   <Table dataSource={filteredStocks} columns={columns} rowKey="ticker" />
 </div>
 );

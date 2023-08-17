@@ -209,6 +209,13 @@
   }
 }
 
+.pageTitle {
+  font-family: "Lucida Console", Monaco, monospace;
+    text-align: center;
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+}
+
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
